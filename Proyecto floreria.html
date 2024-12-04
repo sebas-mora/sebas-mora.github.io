@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florería Margarita Casa Floral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf9f3;
+            color: #333;
+        }
+        header {
+            background-color: #a72894;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header img {
+            max-width: 120px;
+            margin-bottom: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #862188;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h1, h2 {
+            color: #57153d;
+        }
+        .gallery, .blog-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gallery img, .blog-gallery img {
+            width: calc(33.333% - 1rem);
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .blog article {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #9228a7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #882164;
+        }
+        footer {
+            background-color: #571557;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jpeg" alt="Logo de la florería">
+        <h1>Florería Margarita Casa Floral</h1>
+        <p>El color de rosas, un sueño de pasión.</p>
+    </header>
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#gallery">Productos</a>
+        <a href="#blog">Blog</a>
+        <a href="#location">Ubicación</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En <strong>Florería Margarita Casa Floral</strong>, creamos diferente variedad de arreglos florales para 
+                cualquier tipo de evento que necesite el cliente. Nuestro compromiso es transmitir tus sentimientos con la belleza, los 
+                colores y el aroma de las flores.</p>
+
+            <p>Nuestra <strong>misión</strong> es ofrecer una gama amplia de productos de arreglos 
+                florales para todo tipo de eventos bien elaborados y presentados con los precios 
+                adecuados para que la mayor cantidad posible de personas pueda adquirirlos. La <strong>visión</strong> consiste
+                en ofrecer al mundo nuestros productos nuevos de arreglos florales por medio de distintas plataformas digitales.</p>
+                
+            <p>Los <strong>valores</strong> que se demuestran dentro de nuestra floreria para dar un mejor ambiente ha nuestros empleados
+                y clientes son:</p>
+            <ol>
+                <li>Colaboración</li>
+                <li>Esfuerzo</li>
+                <li>Honestidad</li>
+                <li>Responsabilidad</li>
+                <li>Respeto</li>
+            </ol>
+        </section>
+        <section id="gallery">
+            <h2>Nuestros Productos</h2>
+            <p>En el catalogo de productos se muestra los diferentes arreglos florales para cualquier evento que se vaya a 
+                realizar como puede ser un funeral, cumpleaños o regalo especial para tu pareja con un precio adecuado.</p>
+            <div class="gallery">
+                <img src="imagenes/Redondo morado.jpg" alt="Redondo morado">
+                <img src="imagenes/Arreglo elegante.jpg" alt="Arreglo elegante">
+                <img src="imagenes/Corona arreglo.jpg" alt="Corona arreglo">
+                <img src="imagenes/Corazon.jpg" alt="Corazon">
+                <img src="imagenes/Azul.jpg" alt="Azul">
+                <img src="imagenes/Rosas.jpg" alt="Rosas">
+            </div>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>¿Cómo elegir las flores perfectas?</h3>
+                <p>Descubre que arreglos florales combinan mejor para tu casa, oficina o evento programado.</p>
+                <div class="blog-gallery">
+                    <img src="imagenes/Floreria extensa.jpg" alt="Floreria extensa">
+                    <img src="imagenes/Girasol.jpg" alt="Girasol">
+                </div>
+            </article>
+            <article>
+                <h3>Flores que hablan por ti</h3>
+                <p>La combinación de los diferentes colores en las flores hace llamar la atención a muchas personas e inspirándolas
+                    en expresar sus sentimientos y emociones a través de ellas.</p>
+                <div class="blog-gallery">
+                    <img src="imagenes/muchos arreglos.jpg" alt="muchos arreglos">
+                </div>
+            </article>
+        </section>
+        <section id="location">
+            <h2>Ubicación</h2>
+            <p>Estamos ubicados por la calle Ignacio Zaragoza #252 Ote. Entre calles Querétaro y Puebla, Colonia las Brisas,
+                Tecuala; Nayarit. Enseguida de la Funeraria Juan Pablo.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d922.2281458228808!2d-105.45941786922378!3d22.394652683962818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1733293250674!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Solo llámenos a los números que aparecen para atenderlo como ha usted se lo merece:</p>
+            <div>
+                <ul>
+                    <li>3891147965</li>
+                    <li>3891770501</li>
+                </ul>
+            </div>
+
+            <p>O envíenos un mensaje a través de este espacio para responder sus preguntas y dudas que tenga acerca de 
+                nuestros arreglos florales que tenemos disponibles.</p>
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Florería Margarita Casa Floral. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
